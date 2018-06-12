@@ -27,9 +27,18 @@ public class PeopleManagementSpringBootDataAppApplication implements CommandLine
 	public void run(String... args) throws Exception {
 		//createPerson();
 		//createPersons();
-		findPeopleById();
+		//findPeopleById();
+		deletePersonEntity();
 			
 	}
+	private void deletePersonEntity() {
+		Person person=new Person();
+		person.setId(26l);
+		peopleManagement.deletePersonEntity(person);
+	
+		
+	}
+
 	private void findPeopleById() {
 		List<Long> ids=new ArrayList<>();
 		ids.add(25l);

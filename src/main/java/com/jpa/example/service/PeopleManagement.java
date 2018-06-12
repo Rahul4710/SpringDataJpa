@@ -29,6 +29,12 @@ public class PeopleManagement {
 		return iterable;
 	}
 
+	public void deletePersonEntity(Person person) {
+		managementDao.delete(person);
+		
+		
+	}
+
 	
 	} 
 
