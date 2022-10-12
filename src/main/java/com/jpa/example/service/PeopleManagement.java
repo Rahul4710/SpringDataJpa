@@ -23,7 +23,7 @@ public class PeopleManagement {
 		return saveAll;
 		
 	}
-
+	// new branch commit
 	public Iterable<Person> findPeopleById(List<Long> ids) {
 		Iterable<Person> iterable = managementDao.findAllById(ids);
 		return iterable;
