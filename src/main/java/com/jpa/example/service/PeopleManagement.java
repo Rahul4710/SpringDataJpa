@@ -28,7 +28,7 @@ public class PeopleManagement {
 		Iterable<Person> iterable = managementDao.findAllById(ids);
 		return iterable;
 	}
-
+	// sample-api first commit
 	public void deletePersonEntity(Person person) {
 		managementDao.delete(person);
 		
